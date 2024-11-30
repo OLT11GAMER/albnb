@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream"
+    android:padding="15dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:minWidth="@dimen/card_small"
+        android:minHeight="@dimen/card_small"
+        android:layout_width="@dimen/card_small"
+        android:layout_height="@dimen/card_small"
+        android:scaleType="centerCrop"
+        android:cropToPadding="true"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/image_3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Harness the power of the Android SDK by building three immersive and captivating games"
+        android:textSize="8sp" />
+
+</LinearLayout>
