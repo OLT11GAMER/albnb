@@ -5,5 +5,5 @@
     <dimen name="card_corner_radius">16dp</dimen>
     <dimen name="card_margin">10dp</dimen>
     <dimen name="card_small">150dp</dimen>
-    <dimen name="card_small_vert">230dp</dimen>
+    <dimen name="card_small_vert">200dp</dimen>
 </resources>
