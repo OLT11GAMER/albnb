@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:background="@color/eggshell"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".MainActivity">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.notifications.NotificationsFragment">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -229,146 +229,7 @@ tools:context=".MainActivity">
 
         </LinearLayout>
     </HorizontalScrollView>
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/card_small"
-                android:layout_height="@dimen/card_small_vert"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/card_margin"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="4dp">
-
-                <include layout="@layout/gjilan" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/card_small"
-                android:layout_height="@dimen/card_small_vert"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/card_margin"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="4dp">
-
-                <include layout="@layout/tirana" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/card_small"
-                android:layout_height="@dimen/card_small_vert"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/card_margin"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="4dp">
-
-                <include layout="@layout/prizeren" />
-
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </HorizontalScrollView>
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/card_small"
-                android:layout_height="@dimen/card_small_vert"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/card_margin"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="4dp">
-
-                <include layout="@layout/gjilan" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/card_small"
-                android:layout_height="@dimen/card_small_vert"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/card_margin"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="4dp">
-
-                <include layout="@layout/tirana" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/card_small"
-                android:layout_height="@dimen/card_small_vert"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/card_margin"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="4dp">
-
-                <include layout="@layout/prizeren" />
-
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </HorizontalScrollView>
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/card_small"
-                android:layout_height="@dimen/card_small_vert"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/card_margin"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="4dp">
-
-                <include layout="@layout/gjilan" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/card_small"
-                android:layout_height="@dimen/card_small_vert"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/card_margin"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="4dp">
-
-                <include layout="@layout/tirana" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/card_small"
-                android:layout_height="@dimen/card_small_vert"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/card_margin"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="4dp">
-
-                <include layout="@layout/prizeren" />
-
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </HorizontalScrollView>
 </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
