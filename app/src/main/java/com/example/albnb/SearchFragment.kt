@@ -13,7 +13,7 @@ import com.example.albnb.placeholder.PlaceholderContent
 /**
  * A fragment representing a list of Items.
  */
-class searchFragment : Fragment() {
+class SearchFragment : Fragment() {
 
     private var columnCount = 1
 
@@ -52,7 +52,7 @@ class searchFragment : Fragment() {
         // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
-            searchFragment().apply {
+            SearchFragment().apply {
                 arguments = Bundle().apply {
                     putInt(ARG_COLUMN_COUNT, columnCount)
                 }

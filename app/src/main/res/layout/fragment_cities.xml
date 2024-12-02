@@ -7,7 +7,7 @@
         android:background="@color/eggshell"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".ui.dashboard.DashboardFragment">
+        tools:context=".CitiesFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
