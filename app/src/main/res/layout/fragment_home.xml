@@ -6,7 +6,9 @@
         android:background="@color/eggshell"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".HomeFragment">
+        tools:context=".HomeFragment"
+    android:focusable="false"
+    android:clickable="false">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,7 +18,9 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@color/teal_200">
+                android:background="@color/teal_200"
+                android:focusable="false"
+                android:clickable="false">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -100,17 +104,34 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="@dimen/card_small"
-                            android:layout_height="@dimen/card_small_vert"
-                            android:layout_gravity="center"
-                            android:layout_margin="@dimen/card_margin"
-                            app:cardCornerRadius="@dimen/card_corner_radius"
-                            app:cardElevation="4dp">
 
-                            <include layout="@layout/gjilan" />
+                            <!-- CardView -->
+                            <androidx.cardview.widget.CardView
 
-                        </androidx.cardview.widget.CardView>
+                                android:layout_width="@dimen/card_small"
+                                android:layout_height="@dimen/card_small_vert"
+                                android:layout_margin="@dimen/card_margin"
+                                android:clickable="true"
+                                android:focusable="true"
+                                app:cardCornerRadius="@dimen/card_corner_radius"
+                                app:cardElevation="4dp"
+                                android:foreground="?android:attr/selectableItemBackground">
+                                <!-- Card content here -->
+
+                                <include layout="@layout/gjilan" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        <FrameLayout
+                            android:id="@+id/expanded_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#80000000"
+                            android:visibility="gone">
+
+                            <include layout="@layout/gjilan_expanded" />
+                        </FrameLayout>
+
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="@dimen/card_small"
@@ -123,7 +144,6 @@
                             <include layout="@layout/tirana" />
 
                         </androidx.cardview.widget.CardView>
-
                         <androidx.cardview.widget.CardView
                             android:layout_width="@dimen/card_small"
                             android:layout_height="@dimen/card_small_vert"
@@ -132,40 +152,17 @@
                             app:cardCornerRadius="@dimen/card_corner_radius"
                             app:cardElevation="4dp">
 
-                            <include layout="@layout/prizeren" />
+                            <include layout="@layout/berat" />
 
                         </androidx.cardview.widget.CardView>
+
+
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="@dimen/card_small"
-                            android:layout_height="@dimen/card_small_vert"
-                            android:layout_gravity="center"
-                            android:layout_margin="@dimen/card_margin"
-                            app:cardCornerRadius="@dimen/card_corner_radius"
-                            app:cardElevation="4dp">
-
-                            <include layout="@layout/gjilan" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="@dimen/card_small"
-                            android:layout_height="@dimen/card_small_vert"
-                            android:layout_gravity="center"
-                            android:layout_margin="@dimen/card_margin"
-                            app:cardCornerRadius="@dimen/card_corner_radius"
-                            app:cardElevation="4dp">
-
-                            <include layout="@layout/tirana" />
-
-                        </androidx.cardview.widget.CardView>
-
                         <androidx.cardview.widget.CardView
                             android:layout_width="@dimen/card_small"
                             android:layout_height="@dimen/card_small_vert"
@@ -177,59 +174,153 @@
                             <include layout="@layout/prizeren" />
 
                         </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/card_small"
+                            android:layout_height="@dimen/card_small_vert"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/card_margin"
+                            app:cardCornerRadius="@dimen/card_corner_radius"
+                            app:cardElevation="4dp">
+
+                            <include layout="@layout/albanian_riviera" />
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/card_small"
+                            android:layout_height="@dimen/card_small_vert"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/card_margin"
+                            app:cardCornerRadius="@dimen/card_corner_radius"
+                            app:cardElevation="4dp">
+
+                            <include layout="@layout/liqenati" />
+
+                        </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
-
-            <HorizontalScrollView
+            <TextView
+                android:id="@+id/textView200"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="50dp"
+                android:paddingBottom="10dp"
+                android:text="Get Inspired"
+                android:textColor="@color/teal_200"
+                android:textSize="24sp"
+                android:textStyle="bold"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <androidx.cardview.widget.CardView
+                <!-- Card 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:background="@android:color/white">
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:focusable="true">
+                    <ImageView  android:focusable="false"
+                        android:clickable="false"
+                        android:id="@+id/imageView"
+                        android:minWidth="@dimen/card_small"
+                        android:minHeight="@dimen/card_small"
                         android:layout_width="@dimen/card_small"
-                        android:layout_height="@dimen/card_small_vert"
-                        android:layout_gravity="center"
-                        android:layout_margin="@dimen/card_margin"
-                        app:cardCornerRadius="@dimen/card_corner_radius"
-                        app:cardElevation="4dp">
+                        android:layout_height="@dimen/card_small"
+                        android:scaleType="centerCrop"
+                        android:cropToPadding="true"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/clubsdhermia" />
 
-                        <include layout="@layout/gjilan" />
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="@dimen/card_small"
+                    <Button
+                        android:id="@+id/gjilan_expand111"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="@dimen/card_margin"
-                        app:cardCornerRadius="@dimen/card_corner_radius"
-                        app:cardElevation="4dp">
+                        android:layout_margin="0dp"
+                        android:backgroundTint="@color/white"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:shadowColor="@color/transparent"
+                        android:text="Top 5 clubs in Dhermia"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal_200"
+                        android:textSize="13sp"></Button>
+            </LinearLayout>
 
-                        <include layout="@layout/tirana" />
+                </androidx.cardview.widget.CardView>
 
-                    </androidx.cardview.widget.CardView>
+                <!-- Card 2 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:background="@android:color/white">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="@dimen/card_small"
-                        android:layout_height="@dimen/card_small_vert"
-                        android:layout_gravity="center"
-                        android:layout_margin="@dimen/card_margin"
-                        app:cardCornerRadius="@dimen/card_corner_radius"
-                        app:cardElevation="4dp">
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:focusable="true">
+                        <ImageView  android:focusable="false"
+                            android:clickable="false"
+                            android:id="@+id/imageView1"
+                            android:minWidth="@dimen/card_small"
+                            android:minHeight="@dimen/card_small"
+                            android:layout_width="@dimen/card_small"
+                            android:layout_height="@dimen/card_small"
+                            android:scaleType="centerCrop"
+                            android:cropToPadding="true"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/foodgjilan" />
 
-                        <include layout="@layout/prizeren" />
+                        <Button
+                            android:id="@+id/gjilan_eat_expand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="0dp"
+                            android:backgroundTint="@color/white"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:fontFamily="sans-serif-light"
+                            android:shadowColor="@color/transparent"
+                            android:text="Where to eat in Gjilan"
+                            android:textAlignment="center"
+                            android:onClick="expand_food"
+                            android:textColor="@color/teal_200"
+                            android:textSize="13sp"></Button>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-            </HorizontalScrollView>
-
+            </LinearLayout>
         </LinearLayout>
+
 
     </androidx.core.widget.NestedScrollView>

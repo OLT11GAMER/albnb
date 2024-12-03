@@ -4,12 +4,12 @@
 
     <item
         android:id="@+id/navigation_search"
-        android:icon="@drawable/taxi"
+        android:icon="@drawable/ic_search"
         android:title="search" />
     <item
-        android:id="@+id/navigation_cities"
-        android:icon="@drawable/taxi"
-        android:title="cities" />
+        android:id="@+id/navigation_deals"
+        android:icon="@drawable/ic_deals"
+        android:title="deals" />
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"

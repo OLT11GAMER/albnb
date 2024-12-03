@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/cream"
+    android:background="@color/white"
     >
 
 
@@ -20,14 +20,20 @@
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/prizreni" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/prizeren_expand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="PRIZEREN"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:text="PRIZREN"
         android:textAlignment="center"
         android:textColor="@color/teal_200"
-        android:textSize="24sp" />
+        android:textSize="22sp"></Button>
+
 
 </LinearLayout>

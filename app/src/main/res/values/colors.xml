@@ -9,5 +9,10 @@
     <color name="eggshell">#FFFFF8F3</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
+    <color name="blue">#0000FF</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_red">#8B0000</color>
+    <color name="dark_blue">#00008B</color>
+    <color name="baby_blue">#89CFF0</color>
+    <color name="transparent">#00000000</color>
 </resources>

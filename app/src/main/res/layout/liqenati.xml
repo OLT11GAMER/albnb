@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:minWidth="@dimen/card_small"
+        android:minHeight="@dimen/card_small"
+        android:layout_width="@dimen/card_small"
+        android:layout_height="@dimen/card_small"
+        android:scaleType="centerCrop"
+        android:cropToPadding="true"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/liqenati" />
+
+    <Button
+        android:id="@+id/liqenati_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:text="LIQENATI"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="22sp"></Button>
+
+</LinearLayout>

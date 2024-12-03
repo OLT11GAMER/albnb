@@ -9,10 +9,7 @@ import android.widget.TextView
 import com.example.albnb.placeholder.PlaceholderContent.PlaceholderItem
 import com.example.albnb.databinding.FragmentSearchBinding
 
-/**
- * [RecyclerView.Adapter] that can display a [PlaceholderItem].
- * TODO: Replace the implementation with code for your data type.
- */
+
 class MysearchRecyclerViewAdapter(
     private val values: List<PlaceholderItem>
 ) : RecyclerView.Adapter<MysearchRecyclerViewAdapter.ViewHolder>() {

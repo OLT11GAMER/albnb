@@ -9,14 +9,14 @@
     <fragment
         android:id="@+id/navigation_search"
         android:name="com.example.albnb.SearchFragment"
-        android:label="@string/title_home"
+        android:label="search"
         tools:layout="@layout/fragment_search" />
 
     <fragment
-        android:id="@+id/navigation_cities"
-        android:name="com.example.albnb.CitiesFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_cities" />
+        android:id="@+id/navigation_deals"
+        android:name="com.example.albnb.DealsFragment"
+        android:label="deals"
+        tools:layout="@layout/fragment_deals" />
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.albnb.HomeFragment"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/navigation_attractions"
         android:name="com.example.albnb.AttractionsFragment"
-        android:label="@string/title_home"
+        android:label="attractions"
         tools:layout="@layout/fragment_attractions" />
 
     <fragment
@@ -34,4 +34,20 @@
         android:name="com.example.albnb.TravelFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_travel" />
+    <fragment
+        android:id="@+id/gjilan_expanded_layout"
+        android:name="com.example.albnb.TravelFragment"
+        android:label="gjilan"
+        tools:layout="@layout/gjilan_expanded" />
+    <fragment
+        android:id="@+id/booking"
+        android:name="com.example.albnb.TravelFragment"
+        android:label="booking"
+        tools:layout="@layout/fragment_booking" />
+    <fragment
+        android:id="@+id/tirnana_expanded_layout"
+        android:name="com.example.albnb.TravelFragment"
+        android:label="tirana"
+        tools:layout="@layout/tirana_expanded" />
+
 </navigation>

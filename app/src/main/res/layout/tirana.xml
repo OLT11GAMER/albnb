@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/cream"
+    android:background="@color/white"
     >
 
 
@@ -21,14 +21,19 @@
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/tirana" />
 
-    <TextView
-        android:id="@+id/textView" android:textColor="@color/teal_200"
+    <Button
+        android:id="@+id/tirana_expand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
         android:text="TIRANA"
         android:textAlignment="center"
-
-        android:textSize="24sp" />
+        android:textColor="@color/teal_200"
+        android:textSize="22sp"></Button>
 
 </LinearLayout>

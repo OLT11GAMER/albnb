@@ -6,11 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/cream"
+    android:background="@color/white"
     android:clickable="true"
     android:focusable="true">
 
-    <ImageView
+    <ImageView  android:focusable="false"
+        android:clickable="false"
         android:id="@+id/imageView"
         android:minWidth="@dimen/card_small"
         android:minHeight="@dimen/card_small"
@@ -21,13 +22,20 @@
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/gjilan" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/gjilan_expand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:textColor="@color/teal_200"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:shadowColor="@color/transparent"
         android:text="GJILAN"
-        android:textSize="24sp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="22sp"></Button>
+
 </LinearLayout>

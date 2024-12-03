@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="#3B669B">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="App Logo"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/Sllogan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIRANA"
+                    android:fontFamily="@font/judson"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="65dp"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <!-- Row Layout for Two Cards -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Card 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <!-- Image -->
+                            <ImageView
+                                android:id="@+id/hotel_image_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="Hotel Jera Image"
+                                android:scaleType="centerCrop"
+                                tools:src="@drawable/jera" />
+
+                            <!-- Hotel Name -->
+                            <TextView
+                                android:id="@+id/hotel_name_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Hotel Jera"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <!-- Distance Text -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="50m from center"
+                                android:textColor="@android:color/holo_red_dark"
+                                android:textSize="12sp" />
+
+                            <!-- Room Details -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Standard Double Room"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp" />
+
+                            <!-- Bullet Points -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="• 1 large double bed\n• Breakfast included\n• Free cancellation\n• No prepayment needed - pay at the property"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp" />
+
+                            <!-- Button -->
+                            <Button
+                                android:id="@+id/book_button_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:backgroundTint="#3B669B"
+                                android:text="Book"
+                                android:textColor="@android:color/white" />
+
+                            <!-- Price -->
+                            <TextView
+                                android:id="@+id/price_text_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="Price: $120 per night"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <!-- Image -->
+                            <ImageView
+                                android:id="@+id/hotel_image_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="Lot Boutique Hotel"
+                                android:scaleType="centerCrop"
+                                tools:src="@drawable/LotBoutique" />
+
+                            <!-- Hotel Name -->
+                            <TextView
+                                android:id="@+id/hotel_name_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Lot Boutique Hotel"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <!-- Distance Text -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="300m from center"
+                                android:textColor="@android:color/holo_red_dark"
+                                android:textSize="12sp" />
+
+                            <!-- Room Details -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Standard Double Room"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp" />
+
+                            <!-- Bullet Points -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="• 1 large double bed\n• Breakfast included\n• Free cancellation\n• No prepayment needed - pay at the property"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp" />
+
+                            <!-- Button -->
+                            <Button
+                                android:id="@+id/book_button_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:backgroundTint="#3B669B"
+                                android:text="Book"
+                                android:textColor="@android:color/white" />
+
+                            <!-- Price -->
+                            <TextView
+                                android:id="@+id/price_text_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="Price: $125 per night"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <!-- Row Layout for Two Cards -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <!-- Card 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        android:background="@android:color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <!-- Image -->
+                            <ImageView
+                                android:id="@+id/hotel_image_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="SunFlower Hotel"
+                                android:scaleType="centerCrop"
+                                tools:src="@drawable/SunFlower" />
+
+                            <!-- Hotel Name -->
+                            <TextView
+                                android:id="@+id/hotel_name_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="SunFlower Hotel"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Distance Text -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="500m from center"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/holo_red_dark" />
+
+                            <!-- Room Details -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Double or Twin Room"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Bullet Points -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="• 1 large double bed\n• Breakfast included\n• Free cancellation\n• No prepayment needed - pay at the property"
+                                android:layout_marginTop="4dp"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Button -->
+                            <Button
+                                android:id="@+id/book_button_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:backgroundTint="#3B669B"
+                                android:text="Book"
+                                android:textColor="@android:color/white" />
+
+                            <!-- Price -->
+                            <TextView
+                                android:id="@+id/price_text_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="Price: $150 per night"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/black" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        android:background="@android:color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <!-- Image -->
+                            <ImageView
+                                android:id="@+id/hotel_image_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="ZenStay Apartments"
+                                android:scaleType="centerCrop"
+                                tools:src="@drawable/Zen" />
+
+                            <!-- Hotel Name -->
+                            <TextView
+                                android:id="@+id/hotel_name_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Zen Stay Apartments"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Distance Text -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="1km from center"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/holo_red_dark" />
+
+                            <!-- Room Details -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Standard Double Room"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Bullet Points -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="• 1 large double bed\n• Breakfast included\n• Free cancellation\n• No prepayment needed - pay at the property"
+                                android:layout_marginTop="4dp"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/black" />
+
+                            <!-- Button -->
+                            <Button
+                                android:id="@+id/book_button_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:backgroundTint="#3B669B"
+                                android:text="Book"
+                                android:textColor="@android:color/white" />
+
+                            <!-- Price -->
+                            <TextView
+                                android:id="@+id/price_text_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="Price: $60 per night"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/black" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <!-- Title Text -->
+                <TextView
+                    android:id="@+id/locals_favorites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Locals Favorites"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#3B669B"
+                    android:fontFamily="@font/judson"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="130dp"/>
+
+                <!-- Horizontal layout for the cards -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <!-- Card 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        android:background="@android:color/white">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:id="@+id/locals_image_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:contentDescription="Mullixhiu Favorites spots"
+                                android:scaleType="centerCrop"
+                                tools:src="@drawable/Mullixhiu"
+                                tools:ignore="MissingConstraints" />
+
+                            <TextView
+                                android:id="@+id/locals_name_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="50sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                app:layout_constraintTop_toBottomOf="@id/locals_image_1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                tools:text="Mullixhiu" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        android:background="@android:color/white">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:id="@+id/locals_image_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Brigades Image"
+                                tools:src="@drawable/Brigades"
+                                tools:ignore="MissingConstraints" />
+
+                            <TextView
+                                android:id="@+id/locals_name_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                app:layout_constraintTop_toBottomOf="@id/locals_image_2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                tools:text="The Brigades Palace" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout> <!-- End of Horizontal layout for cards -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <!-- Card 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        android:background="@android:color/white">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:id="@+id/locals_image_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:contentDescription="House of Leaves"
+                                android:scaleType="centerCrop"
+                                tools:src="@drawable/HouseLeaves"
+                                tools:ignore="MissingConstraints" />
+
+                            <TextView
+                                android:id="@+id/locals_name_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                app:layout_constraintTop_toBottomOf="@id/locals_image_3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                tools:text="House of Leaves"
+                                tools:ignore="MissingConstraints" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        android:background="@android:color/white">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:id="@+id/locals_image_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Oda"
+                                tools:src="@drawable/Oda"
+                                tools:ignore="MissingConstraints" />
+
+                            <TextView
+                                android:id="@+id/locals_name_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="65sp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                app:layout_constraintTop_toBottomOf="@id/locals_image_4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                tools:text="Oda" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>            </LinearLayout> <!-- End of parent LinearLayout -->
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
