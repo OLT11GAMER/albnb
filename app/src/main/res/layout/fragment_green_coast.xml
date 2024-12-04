@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gjilan_expanded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GreenCoastFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="130dp"
+                android:text="Green Coast"
+                android:textStyle="bold"
+                android:textColor="@color/teal_200"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="20dp"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:text="Featuring mountain views, Green Coast 136 provides accommodation with a garden and a patio,around 2.2km from Palasa Beach. The air-conditioned accommodation is 1 km from Nazar Beach, and guests can benefit from private available on site and free WiFi. The property has full-day security, a restaurant with an outdoor dining area."
+                android:textColor="@color/dark_red"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="50dp"
+                android:fontFamily="serif"/>
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="120dp"
+                android:text="The spacious holiday home with a balcony and sea view features 2 bedrooms, a living room, a flat-screen TV, an equipped kitchen with a dishwasher and an oven, and 2 bathrooms with a walk-in shower. A private entrance leads guests into the holiday home, where they can enjoy some wine or champagne and fruits. The accommodation is non-smoking."
+                android:textColor="@color/dark_red"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="170dp"
+                android:fontFamily="serif"/>
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:text="Guests can relax in the on-site bar, while a minimarket is also available."
+                android:textColor="@color/dark_red"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="290dp"
+                android:fontFamily="serif"/>
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:text="Barbecue facilities are available and guests can also relax on the sun terrace."
+                android:textColor="@color/dark_red"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="330dp"
+                android:fontFamily="serif"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="1"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gjilan" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gjilan" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gjilan" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gjilan" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gjilan" />
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gjilan" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gjilan" />
+            </GridLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="1"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gjilan" />
+            </GridLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+
+            <Button
+                android:id="@+id/booking_button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="130dp"
+                android:backgroundTint="@color/teal_200"
+                android:text="Reserve"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

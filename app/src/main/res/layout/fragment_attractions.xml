@@ -20,7 +20,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="#3B669B">
+                android:background="@color/teal_200">
 
 
                 <ImageView
@@ -39,7 +39,7 @@
                     android:fontFamily="@font/judson"
                     android:gravity="center"
                     android:text="Hike, Swim, Explore – Kosovo and Albania Have It All!"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/eggshell"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
@@ -61,7 +61,7 @@
                     android:layout_marginBottom="12dp"
                     android:fontFamily="@font/judson"
                     android:text="Every castle has a story - Are you ready to listen"
-                    android:textColor="#3B669B"
+                    android:textColor="@color/teal_200"
                     android:textSize="19sp"
                     android:textStyle="bold" />
 
@@ -285,7 +285,7 @@
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/judson"
                     android:text="In the mood for beach days"
-                    android:textColor="#3B669B"
+                    android:textColor="@color/teal_200"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -479,7 +479,7 @@
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/judson"
                     android:text="Night Life"
-                    android:textColor="#3B669B"
+                    android:textColor="@color/teal_200"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 

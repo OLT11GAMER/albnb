@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/riviera" />
 
     <Button
-        android:id="@+id/tirana_expand"
+        android:id="@+id/rivera_expand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

@@ -83,7 +83,7 @@
                                 android:layout_height="150dp"
                                 android:contentDescription="Hotel Jera Image"
                                 android:scaleType="centerCrop"
-                                tools:src="@drawable/jera" />
+                                tools:src="@drawable/Jera" />
 
                             <!-- Hotel Name -->
                             <TextView

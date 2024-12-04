@@ -89,6 +89,7 @@ class MainActivity : AppCompatActivity ()  {
 //    fun backtoroot(){
 //        setContentView(binding.root)
 //    }
+
     private fun expandCard() {
         expandedContainer.visibility = View.VISIBLE
         expandedContainer.alpha = 0f

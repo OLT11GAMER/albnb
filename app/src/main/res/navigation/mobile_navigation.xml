@@ -9,13 +9,13 @@
     <fragment
         android:id="@+id/navigation_search"
         android:name="com.example.albnb.SearchFragment"
-        android:label="search"
+        android:label="Search"
         tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/navigation_deals"
         android:name="com.example.albnb.DealsFragment"
-        android:label="deals"
+        android:label="Deals"
         tools:layout="@layout/fragment_deals" />
     <fragment
         android:id="@+id/navigation_home"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/navigation_attractions"
         android:name="com.example.albnb.AttractionsFragment"
-        android:label="attractions"
+        android:label="Attractions"
         tools:layout="@layout/fragment_attractions" />
 
     <fragment
@@ -35,19 +35,29 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_travel" />
     <fragment
-        android:id="@+id/gjilan_expanded_layout"
-        android:name="com.example.albnb.TravelFragment"
-        android:label="gjilan"
-        tools:layout="@layout/gjilan_expanded" />
+        android:id="@+id/tirana_expanded_layout"
+        android:name="com.example.albnb.TiranaExpandedFragment"
+        android:label="Tirana"
+        tools:layout="@layout/fragment_tirana_expanded" />
     <fragment
-        android:id="@+id/booking"
-        android:name="com.example.albnb.TravelFragment"
-        android:label="booking"
+        android:id="@+id/fragment_booking"
+        android:name="com.example.albnb.BookingFragment"
+        android:label="Booking"
         tools:layout="@layout/fragment_booking" />
     <fragment
-        android:id="@+id/tirnana_expanded_layout"
-        android:name="com.example.albnb.TravelFragment"
-        android:label="tirana"
-        tools:layout="@layout/tirana_expanded" />
+        android:id="@+id/food_gjilan_expanded"
+        android:name="com.example.albnb.FoodGjilanFragment"
+        android:label="Where to eat in Gjilan"
+        tools:layout="@layout/food_gjilan_expanded" />
+    <fragment
+        android:id="@+id/fragment_rivera"
+        android:name="com.example.albnb.RiveraFragment"
+        android:label="ALbanian Rivera"
+        tools:layout="@layout/fragment_rivera" />
+    <fragment
+        android:id="@+id/fragment_green_coast"
+        android:name="com.example.albnb.GreenCoastFragment"
+        android:label="Green Coast"
+        tools:layout="@layout/fragment_green_coast" />
 
 </navigation>

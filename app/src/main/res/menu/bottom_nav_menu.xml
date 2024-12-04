@@ -21,7 +21,7 @@
 
     <item
         android:id="@+id/navigation_travel"
-        android:icon="@drawable/taxi"
+        android:icon="@drawable/ic_taxi"
         android:title="@string/title_notifications" />
 
 </menu>

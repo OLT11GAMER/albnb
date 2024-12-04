@@ -122,16 +122,6 @@
 
                             </androidx.cardview.widget.CardView>
 
-                        <FrameLayout
-                            android:id="@+id/expanded_container"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="#80000000"
-                            android:visibility="gone">
-
-                            <include layout="@layout/gjilan_expanded" />
-                        </FrameLayout>
-
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="@dimen/card_small"
@@ -313,7 +303,6 @@
                             android:shadowColor="@color/transparent"
                             android:text="Where to eat in Gjilan"
                             android:textAlignment="center"
-                            android:onClick="expand_food"
                             android:textColor="@color/teal_200"
                             android:textSize="13sp"></Button>
                     </LinearLayout>

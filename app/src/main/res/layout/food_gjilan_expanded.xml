@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Places to eat in Gjilan"
+                android:textStyle="bold"
+                android:textColor="@color/dark_blue"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="20dp"
+                android:fontFamily="serif"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1.BAGOLINA EATERY"
+                android:textStyle="bold|italic"
+                android:textColor="@color/dark_blue"
+                android:background="@color/baby_blue"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:layout_marginTop="16dp">
+
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bagolina" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bagolina1" />
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bagolina2" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bagolina Eatery brings authentic world gastronomy experiences right to the heart of Gjilan. Super delicious when you taste them, but also when you look at them, our dishes are full of flavor and are prepared with the best ingredients."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Address: Rr. 15, Qeshori Dardania 1, Gjilan 61000"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hours:
+Open 07:00AM ⋅ Closes 11:30 PM"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Phone: +383 48 100 175"
+                android:textColor="@color/dark_red"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2.Bon Ami"
+                android:textStyle="bold|italic"
+                android:textColor="@color/dark_blue"
+                android:background="@color/baby_blue"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:layout_marginTop="16dp">
+
+
+                <ImageView
+                    android:layout_width="120dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bonami" />
+
+                <ImageView
+                    android:layout_width="120dip"
+                    android:layout_height="100dip"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bonami1" />
+                <ImageView
+                    android:layout_width="120dip"
+                    android:layout_height="100dip"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bonami2" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A warm environment that welcomes you with special flavors and an unforgettable atmosphere.
+Come, create memories and enjoy the most beautiful moments with your loved ones.
+We welcome you!"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Address:  Gjinollve Street, Gjilan 60000"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hours:
+Open 07:00 AM⋅ Closes 11:00PM"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Phone: +383 44 892 169"
+                android:textColor="@color/dark_red"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3. Bujana "
+                android:textStyle="bold|italic"
+                android:textColor="@color/dark_blue"
+                android:background="@color/baby_blue"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:layout_marginTop="16dp">
+
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bujana" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bujana1" />
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bujana2" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="From the land of eagles with Albanian flavor and national pride.
+Welcome to the new environment!"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Address:  Restaurant Bujana 60000 Gjilan, Kosovo"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hours: Always open"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Phone: +383 44 136 724"
+                android:textColor="@color/dark_red"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4. Garden Restaurant "
+                android:textStyle="bold|italic"
+                android:textColor="@color/dark_blue"
+                android:background="@color/baby_blue"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:layout_marginTop="16dp">
+
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/garden" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/garden2" />
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/garden1" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Where taste meets nature.
+Fresh and delicious flavors and unforgettable memories."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Address: rr. Prishtines p.n, Gjilan, Kosovo"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hours: Opens 06:00AM-Closes 01:00AM"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Phone: +383 49 656 800"
+                android:textColor="@color/dark_red"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

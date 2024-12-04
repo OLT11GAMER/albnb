@@ -1,14 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingFragment">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Heading -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/booking_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel/Event Booking"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
 
-</FrameLayout>
+    <!-- Input: Number of Rooms -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Rooms:" />
+    <EditText
+        android:id="@+id/input_rooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of rooms"
+        android:inputType="number" />
+
+    <!-- Input: Number of People -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of People:" />
+    <EditText
+        android:id="@+id/input_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of people"
+        android:inputType="number" />
+
+    <!-- Input: Event or Hotel -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Type:" />
+    <RadioGroup
+        android:id="@+id/radio_group_booking_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel" />
+        <RadioButton
+            android:id="@+id/radio_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event" />
+    </RadioGroup>
+
+    <!-- Input: Check-in and Check-out Dates -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check-in Date:" />
+    <EditText
+        android:id="@+id/input_checkin_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select check-in date"
+        android:focusable="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check-out Date:" />
+    <EditText
+        android:id="@+id/input_checkout_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select check-out date"
+        android:focusable="false" />
+
+    <!-- Submit Button -->
+    <Button
+        android:backgroundTint="@color/teal_200"
+        android:id="@+id/button_submit_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Booking"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
