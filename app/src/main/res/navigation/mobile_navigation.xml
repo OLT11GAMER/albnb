@@ -10,7 +10,7 @@
         android:id="@+id/navigation_search"
         android:name="com.example.albnb.SearchFragment"
         android:label="Search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/city_item" />
 
     <fragment
         android:id="@+id/navigation_deals"

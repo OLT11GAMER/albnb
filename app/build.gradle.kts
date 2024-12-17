@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
+
 }
 
 android {
@@ -39,7 +41,11 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -53,6 +59,9 @@ dependencies {
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.runtime.android)
     implementation(libs.androidx.storage)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore.ktx)
+    implementation(libs.androidx.activity)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
