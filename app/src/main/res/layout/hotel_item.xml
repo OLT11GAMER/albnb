@@ -2,42 +2,50 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="8dp"
-    android:clickable="true"
-    android:focusable="false">
+    android:padding="8dp">
 
-    <!-- City Image -->
+    <!-- Hotel Image -->
     <ImageView
-        android:id="@+id/cityImage"
+        android:id="@+id/hotelImage"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:scaleType="centerCrop"
         android:layout_marginEnd="8dp" />
 
-    <!-- City Details -->
+    <!-- Hotel Details -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <!-- City Name -->
+        <!-- Hotel Name -->
         <TextView
-            android:id="@+id/cityName"
+            android:id="@+id/hotelName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/black" />
 
-        <!-- City Description -->
+        <!-- Hotel Description -->
         <TextView
-            android:id="@+id/cityDescription"
+            android:id="@+id/hotelDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="@android:color/darker_gray"
             android:maxLines="2"
             android:ellipsize="end" />
+
+        <!-- Hotel Price -->
+        <TextView
+            android:id="@+id/hotelPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="4dp" />
     </LinearLayout>
 </LinearLayout>

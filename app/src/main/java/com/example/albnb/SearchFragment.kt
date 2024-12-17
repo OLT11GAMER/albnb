@@ -1,5 +1,6 @@
 package com.example.albnb
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -22,35 +23,29 @@ class SearchFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_search, container, false)
 
+        // RecyclerView and SearchView setup
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
-        val searchView = view.findViewById<SearchView>(R.id.searchView)
-
-        // Attach a LayoutManager
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        // Set the adapter
-        adapter = CityAdapter(cityList)
+        // Setup RecyclerView adapter with click listener
+        adapter = CityAdapter(cityList) { selectedCity ->
+            Log.d("SearchFragment", "City clicked: ${selectedCity.name}")
+
+            // Navigate to City Details Activity
+            val intent = Intent(requireContext(), CityDetailsActivity::class.java).apply {
+                putExtra("cityTitle", selectedCity.name)
+                putExtra("cityDescription", selectedCity.description)
+                putExtra("cityImage", selectedCity.imageUrl)
+            }
+            startActivity(intent)
+        }
         recyclerView.adapter = adapter
 
-        // Fetch data from Firebase
+        // Fetch city data from Firebase
         fetchCities()
-
-        // Set up SearchView filtering
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                adapter.filter(query.orEmpty())
-                return false
-            }
-
-            override fun onQueryTextChange(newText: String?): Boolean {
-                adapter.filter(newText.orEmpty())
-                return false
-            }
-        })
 
         return view
     }
-
 
     private fun fetchCities() {
         val database = FirebaseDatabase.getInstance()

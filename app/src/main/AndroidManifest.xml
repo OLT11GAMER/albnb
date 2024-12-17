@@ -12,9 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Albnb"
         tools:targetApi="31">
-        <activity
-            android:name=".CityDetailsActivity"
-            android:exported="false" />
+        <activity android:name=".HotelDetailsActivity" />
+
+        <activity android:name=".CityDetailsActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
